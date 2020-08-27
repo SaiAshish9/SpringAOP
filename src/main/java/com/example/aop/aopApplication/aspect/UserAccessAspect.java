@@ -15,7 +15,7 @@ public class UserAccessAspect {
 //  @Before("execution(* com.example.aop.aopApplication.business..*.*(..))")
 
 // PointCut->  Expression which defines what kind of methods needs to be executed is called a point-cut 
-  @Before("com.example.aop.aopApplication.aspect.CommonJointPointConfig.dataLayerExecution()")
+  @Before("com.example.aop.aopApplication.aspect.CommonJointPointConfig.trackTimeAnnotation()")
   public void before(JoinPoint joinPoint) {
 //	  Advice -> What should I do when after interception of method
 //	  Advice + PointCut = Aspect
